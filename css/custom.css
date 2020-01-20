@@ -1,9 +1,9 @@
 body {
   font-size: 14px;
   line-height: 24px;
-  color: #565b69;
+  color: #7d818c;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 .bg-gradient-primary {
   background-color: #0c4295;
@@ -20,12 +20,33 @@ body {
   top: 7px;
   right: 12px;
 }
+.table {
+color: #565b69;
+font-weight: 500;
+}
+.btn-row-bg {
+  background: #e6ecf5;
+}
 .btn-row {
+  padding: 16px 0 20px;
   display: flex;
-  justify-content: end;
+  flex-direction: row-reverse;
 }
 .file-field {
   display: flex;
+}
+.file-field span {
+  color: #0d47a0;
+}
+form label {
+color: #7d818c;
+}
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex_end input {
+  margin-right: 0 !important;
 }
 .justify-content-middle {
   display: flex;
@@ -58,17 +79,19 @@ header {
   justify-content: flex-end;
 }
 .topbar2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .navbar-dark .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 700;
+  display: flex;
 }
 .navbar-dark .navbar-nav .nav-link span.icon {
   font-size: 24px;
+  margin: 0 20px 0 0;
+}
+.dropdown-toggle::after {
+  margin-top: 10px;
 }
 .topbar .navbar-search input {
   font-size: .85rem;
@@ -89,13 +112,21 @@ header {
 #navbarNavDropdown2 .row, header .row {
   width: 100%;
 }
-.card1 {
+.card1_row {
   margin-top: -70px;
+}
+.flex_end1 {
+  justify-content: flex-end;
 }
 h1 label {
   font-size: 1rem;
 }
-
+div.navbar {
+  padding: 0;
+}
+nav.navbar {
+  
+}
 /*
 1rem=16px;
 .75rem=12px;
@@ -105,6 +136,7 @@ h1 label {
 }
 .card1 .h5 {
   font-size: 2.25rem;/*36px*/
+  text-align: right;
 }
 .card1 .card-body {
   padding-top: 0;
@@ -113,3 +145,98 @@ h1 label {
 .text-primary {
   color: #0d47a1 !important;
 }
+header h1 {
+  color: #ffffff;
+}
+/*table styles*/
+.dataTables_wrapper {
+  margin: 10px 12px;
+}
+.table-responsive thead {
+background: #565b69;
+color: #ffffff;
+}
+.table-responsive td,
+.table-responsive th  {
+  text-align: right;
+
+}
+.table-responsive td:nth-child(1),
+.table-responsive td:nth-child(2),
+.table-responsive th:nth-child(1),
+.table-responsive th:nth-child(2) {
+text-align: left;
+}
+.table-responsive tfoot th,
+.table-responsive tfoot th:nth-child(1),
+.table-responsive tfoot th:nth-child(2) {
+  background: #f8f8f8;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  /* Force table to not be like tables anymore */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+  display: block;
+  }
+   
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  }
+   
+  #no-more-tables tr { border: 1px solid #ccc; }
+    
+  #no-more-tables td {
+  /* Behave like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 50%;
+  white-space: normal;
+  }
+   
+  #no-more-tables td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-align:left;
+  font-weight: bold;
+  }
+   
+  /*
+  Label the data
+  */
+  #no-more-tables td:before { content: attr(data-title); 
+    background: #565b69;
+    color: #ffffff;
+  }
+  #no-more-tables tfoot th {
+    display: table-cell;
+    width: 100vh;
+    text-align: right;
+  }
+
+  .formBox1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .formBox1 :nth-child(1) { order: 1; }
+  .formBox1 :nth-child(2) { order: 2; }
+  .formBox1 :nth-child(3) { order: 4; }
+  .formBox1 :nth-child(4) { order: 3; }
+  }
+
+
+  
