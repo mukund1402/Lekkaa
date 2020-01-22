@@ -33,6 +33,10 @@ header .row {
   flex-direction: row;
   justify-content: flex-end;
 }
+.topbar .navbar-search {
+  width: 14rem;
+  padding-top: 15px;
+}
 .topbar .navbar-search input {
   font-size: .85rem;
   height: auto;
@@ -272,6 +276,23 @@ input[type=file] {
     text-align: right;
   }
 
+  header .rounded-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-item {
+    border-bottom: 1px solid#265aab;
+  }
+  .nav-link {
+    padding: 20px 0;
+  }
+  .dropdown .dropdown-menu {
+    background:#0c4295;
+    border: 0 none;
+  }
+  .dropdown-item {
+    color: #fecc02;
+  }
   /* Form styles */
   .formBox1 {
     display: flex;
@@ -282,6 +303,3 @@ input[type=file] {
   .formBox1 :nth-child(3) { order: 4; }
   .formBox1 :nth-child(4) { order: 3; }
 }
-
-
-  
