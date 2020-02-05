@@ -11,7 +11,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
+.clear {
+  clear: both;
+}
 /* header styles */
 .bg-gradient-primary {
   background-color: #0c4295;
