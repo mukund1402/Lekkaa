@@ -205,6 +205,35 @@ input[type=file] {
   background: #f8f8f8;
   text-align: right;
 }
+.bill-page h3 {
+  color: blueviolet;
+}
+.bill-page label {
+  font-weight: bold;
+}
+.bill-page p {
+  background: lightgray;
+  padding: 2px 5px;
+}
+.bill-table tfoot th:nth-child(2) {
+  text-align: left;
+}
+.value-table td,
+.value-table th {
+  padding: 0 15px;
+  font-weight: bold;
+}
+.value-table th {
+  background: #565b69;
+  color: #ffffff;
+}
+.value-table th label {
+  color: #ffffff;
+}
+.value-table td:nth-child(2),
+.value-table th:nth-child(2) {
+  text-align: right;
+}
 /* for col-sm- */
 @media only screen and (min-width: 576px) {
 
@@ -277,7 +306,6 @@ input[type=file] {
     width: 100vh;
     text-align: right;
   }
-
   header .rounded-circle {
     width: 100px;
     height: 100px;
