@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lekkaa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/jquery.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+  <header class="bg-gradient-primary">
+    <div class="d-md-none" style="background: #0a3981; height: 24px;"></div>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-primary bg-primary">
+      <div class="container">
+        <div class="container1">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/lekkaa_logo.png" alt="Lekkaa" /></a>
+          <ul class="navbar-nav topbar" style="position: absolute; top: 0; right: 0;">
+            <li class="nav-item">
+              <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="fa fa-bell">
+                  <span class="badge badge-info">11</span>
+                </i>
+              </a>
+            </li>
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown  d-none d-lg-block">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+    
+          <div class="break"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item d-md-none" style="background: #0a3981;">
+                <a class="nav-link" href="#" role="button">
+                  <img class="img-profile rounded-circle mr-2" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                  <span class="mt-4 d-inline">Abhijit Kulkarni
+                    <span class="mb-4 small"><br />Base lin etext</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="salesSaleInvoices.html" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Sales"></span>
+                  Sales 
+                  <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="salesSaleInvoices.html">Sale invoices</a>
+                  <a class="dropdown-item" href="salesPaymentIn.html">Payment in</a>
+                  <a class="dropdown-item" href="salesQuotation.html">Quotation</a>
+                  <a class="dropdown-item" href="salesSaleOrder.html">Sale order </a>
+                  <a class="dropdown-item" href="salesDeliveryChallan.html">delivery challan</a>
+                  <a class="dropdown-item" href="salesCreditNote.html">Sale return</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="purchasePurchaseBills.html" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Purchase"></span>
+                  Purchase
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="purchasePurchaseBills.html">Purchase bills</a>
+                  <a class="dropdown-item" href="purchasePaymentOut.html">Payment out</a>
+                  <a class="dropdown-item" href="purchasePurchaseOrder.html">Purchase order</a>
+                  <a class="dropdown-item" href="purchaseDebitNote.html">Purchase return</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-report"></span>
+                  Reports
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Transaction</a>
+                  <a class="dropdown-item" href="#">Party report</a>
+                  <a class="dropdown-item" href="#">GST report</a>
+                  <a class="dropdown-item" href="#">Item/stock report</a>
+                  <a class="dropdown-item" href="#">Expense report</a>
+                  <a class="dropdown-item" href="#">Sales report</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Settings"></span>
+                  Settings
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">General</a>
+                  <a class="dropdown-item" href="#">Taxes and GST</a>
+                  <a class="dropdown-item" href="#">Transaction</a>
+                  <a class="dropdown-item" href="#">Party</a>
+                  <a class="dropdown-item" href="#">Item</a>
+                  <a class="dropdown-item" href="#">Print</a>
+                  <a class="dropdown-item" href="#">Payment reminder</a>
+                  <a class="dropdown-item" href="#">Data backup</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Settings"></span>
+                  Help & support
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Customer care</a>
+                  <a class="dropdown-item" href="#">Guide/Manual</a>
+                  <a class="dropdown-item" href="#">Remote support</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin Page Content -->
+  
+  <!-- Card Content -->
+  <div class="container">
+
+    <div class="navbar navbar-expand-md navbar-light">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown2">
+        
+        <!-- Content Row -->
+        <div class="row card1_row">
+
+          <!-- SALES & Purchase Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie1_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">20%</div>
+                      <div class="text-xs font-weight-bold text-primary text-capitalize mb-1">SALES & Purchase</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SALES & Purchase Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie2_img.png" alt="" />   
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">37</div>
+                      <div class="text-xs font-weight-bold text-primary text-capitalize mb-1">SALES & Purchase</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Range Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie3_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">205</div>
+                      <div class="text-xs font-weight-bold text-primary text-capitalize mb-1">Products Range</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Range Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie4_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">80</div>
+                      <div class="text-xs font-weight-bold text-primary text-capitalize mb-1">Products Range</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-arrow-down"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container-->
+  <form class="needs-validation" novalidate>
+
+    <!-- Form fields Content -->
+    <div class="container">
+                  
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">
+          <span>Sale</span>
+          <span class="custom-control custom-checkbox custom-control-inline">
+          <input class="custom-control-input" id="cash_sale" type="checkbox" value="">
+          <label class="custom-control-label" for="cash_sale">
+            
+            Cash Sale
+          </label></span>
+        </h1>
+      </div>
+      
+      <!-- Form row -->
+      <div class="form-row formBox1">
+        <div class="form-group col-md-3 mb-3">
+          <label for="name1">Name</label>
+          <input type="text" class="form-control" id="name1" placeholder="Name" value="Abhijit Joshi" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-2 col-sm-6 mb-3">
+          <label for="datetimepicker1">Date</label>
+          <div class="input-append date" id="datetimepicker1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+            <input class="form-control" size="16" type="text" value="">
+            <span class="add-on"><i class="fa fa-calendar"></i></span>
+          </div> 
+        </div>
+        <div class="form-group col-md-3 mb-3">
+          <label for="placeOfSupply">Place of Supply</label>
+          <select class="form-control" id="placeOfSupply">
+            <option>Select</option>
+          </select>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-sm-6 col-md-2 col-lg-1 mb-3">
+          <label for="invoiceNo">Invoice No</label>
+          <input type="text" class="form-control" id="invoiceNo" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form row -->
+      <div class="form-row">
+        <div class="col-auto mb-3">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxExclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxExclude">Tax Exclude</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxInclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxInclude">Tax Include</label>
+          </div>
+        </div>
+      </div>
+                  
+      <!-- Table row -->
+      <div class="table-responsive"><!-- id="no-more-tables" -->
+        <table id="dataTable" class="col-sm-12 table table-condensed cf">
+          <thead class="cf">
+            <tr>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Unit</th>
+              <th>Price/Unit</th>
+              <th>Disc (%)</th>
+              <th>Disc Amount</th>
+              <th>Tax Amount</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="Quantity">HSN / SAC</td>
+              <td data-title="Unit">200</td>
+              <td data-title="Price/Unit">Rs 32.49</td>
+              <td data-title="Disc (%)">18.0%</td>
+              <td data-title="Disc Amount">Rs 45.57</td>
+              <td data-title="Tax Amount">Rs 45.57</td>
+              <td data-title="Amount">Rs 45.57</td>
+            </tr>
+            <tr>
+              <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="Quantity">HSN / SAC</td>
+              <td data-title="Unit">200</td>
+              <td data-title="Price/Unit">Rs 32.49</td>
+              <td data-title="Disc (%)">18.0%</td>
+              <td data-title="Disc Amount">Rs 45.56</td>
+              <td data-title="Tax Amount">Rs 45.56</td>
+              <td data-title="Amount">Rs 45.57</td>
+            </tr>
+          </tbody>
+          <tfoot class="cf">
+            <tr>
+              <th colspan="7">Total:</th>
+              <th>Rs 435.57</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- Form row -->
+      <div class="form-row justify-content-end d-flex">
+        <div class="col-auto mb-3 d-md-block d-sm-none">
+          <a href="#"><i class="fas fa-plus fa-sm"></i> Add Row</a>
+        </div>
+        <div class="col-auto mb-3 d-md-block d-sm-none">
+          <a href="#"><i class="fas fa-minus fa-sm"></i> Remove Row</a>
+        </div>
+      </div>
+      
+      <!-- Form row -->
+      <div class="form-row">
+        <div class="col-lg-7 mb-3">
+          
+          <!-- Form row -->
+          <div class="form-row">
+            <div class="col-md-5 mb-3">
+              <label for="validationCustom01">Payment Type</label>
+              <select class="form-control" id="validationCustom01">
+                <option>Select</option>
+              </select>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <label for="validationCustom02">Ref. No</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+
+          <!-- Form row -->
+          <div class="form-row">
+            <div class="col-md-5 mb-3">
+                <div class="file-field">
+                  <div class="img-preview z-depth-1-half mb-4">
+                    <img src="images/photo_upload.jpg" class="img-fluid"
+                      alt="example placeholder">
+                  </div>
+                  <div class="d-flex justify-content-center justify-content-middle">
+                    <div class="btn btn-mdb-color btn-rounded float-left">
+                      <span>Add/change</span>
+                      <input type="file">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="description">Description</label>
+              <textarea id="description" class="form-control" rows="3" placeholder="Type here .."></textarea>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 mb-3">
+          
+          <!-- Form row -->
+          <div class="form-row form-group mb-3 flex_end">
+            <label class="col text-right mb-0 form-inline flex_end" for="totalAmount">Total Amount</label>
+            <div class="col">
+              <input type="text" id="totalAmount" class="col form-control"></div>
+          </div>
+          
+          <!-- Form row -->
+          <div class="form-row form-group mb-3 flex_end">
+            <label class="col text-right mb-0 form-inline flex_end" for="receivedAmount">Received Amount</label>
+            <div class="col">      
+              <input type="text" id="receivedAmount" class="col form-control">
+            </div>
+          </div>
+          
+          <!-- Form row -->
+          <div class="form-row form-group mb-3 flex_end">
+            <label class="col text-right mb-0 form-inline flex_end" for="balancedAmount">Balanced Amount</label>
+            <div class="col">
+              <input type="text" id="balancedAmount" class="col form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Form fields Content -->
+    </div>
+    <!-- Form Buttons Content -->
+    <div class="btn-row-bg">
+      <div class="container">
+        <div class="btn-row">
+          <button class="btn btn-primary d-sm-none d-md-block" type="submit">Save & Print</button>
+          <button class="btn btn-primary mr-2" type="submit">Save & New</button>
+          <button class="btn btn-primary mr-2" type="submit">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- Form Buttons Content end-->
+  </form>
+</body>
+</html>

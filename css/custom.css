@@ -1,0 +1,605 @@
+:root {
+  --blue: #0c4295;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #0c4295;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #7d818c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/*
+1rem=16px;
+.75rem=12px;
+.5rem=8px
+*/
+.bg-primary {
+  background-color: #0c4295 !important;
+}
+.navbar {
+  padding: .9375rem 1rem;
+}
+.navbar-primary .navbar-nav .nav-link {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+}
+.navbar-primary .navbar-nav .nav-link span.icon {
+  font-size: 24px;
+  margin: 0 20px 0 0;
+}
+.navbar-primary .navbar-brand {
+  color: #fff;
+}
+
+.navbar-primary .navbar-brand:hover, .navbar-primary .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-primary .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-primary .navbar-nav .nav-link:hover, .navbar-primary .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-primary .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-primary .navbar-nav .show > .nav-link,
+.navbar-primary .navbar-nav .active > .nav-link,
+.navbar-primary .navbar-nav .nav-link.show,
+.navbar-primary .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-primary .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-primary .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-primary .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-primary .navbar-text a {
+  color: #fff;
+}
+
+.navbar-primary .navbar-text a:hover, .navbar-primary .navbar-text a:focus {
+  color: #fff;
+}
+/* navbar styles */
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav.topbar .nav-link {
+    height: 45px;
+  }
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* header styles */
+.bg-gradient-primary {
+  background-color: #0c4295;
+  background-image: linear-gradient(180deg,#0c4295 10%,#0d47a1 100%);
+  background-size: cover;
+}
+header {
+  padding-bottom: 70px;
+  height: 100px;
+}
+.topbar .nav-item .nav-link .img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+/*searh bar*/
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: .85rem;
+  height: auto;
+  
+  border-radius: 20px;
+}
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+.searchbar:hover {
+background: #295cac !important;
+  border: 1px solid #567fbd !important;
+}
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 14rem;
+  caret-color:red;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  color: #567fbd;
+  text-decoration: none;
+}
+.search_icon {
+  height: 44px;
+  width: 44px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:#567fbd;
+  text-decoration:none;
+  font-size: 1.2rem;
+}
+/**/
+.navbar-primary .navbar-nav .nav-link {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 700;
+  display: flex;
+}
+.navbar-primary .navbar-nav .nav-link span.icon {
+  font-size: 24px;
+  margin: 0 20px 0 0;
+}
+.navbar-brand {
+  margin-top: 5px;
+}
+.dropdown-toggle::after {
+  margin-top: 10px;
+}
+div.navbar {
+  padding: 0;
+}
+#navbarNavDropdown.show {
+  position: absolute;
+  top: 70px;
+  z-index: 999;
+  width: 90%;
+  padding: 20px;
+
+  background-color: #0c4295;
+  background-image: linear-gradient(180deg,#0c4295 10%,#0d47a1 100%);
+  background-size: cover;
+}
+/* Content section */
+/* div.navbar */
+.navbar-primary .navbar-toggler {
+  border: 0 none;
+  color: #ffffff;
+}
+#navbarNavDropdown2 .row {
+  width: 100%;
+}
+.card1 .card-body {
+  padding-top: 0;
+  padding-bottom: 0;  
+}
+.card1 .col {
+  text-align: right;
+}
+.card1 .h5 {
+  font-size: 2.25rem;/*36px*/
+}
+.text-primary {
+  color: #0d47a1 !important;
+}
+.text-xs {
+  font-size: .75rem; /*12px*/
+}
+/**/
+/* Form styles */
+h1 label {
+  font-size: 1rem;
+}
+form label {
+  color: #7d818c;
+}
+.date {
+  position: relative;
+}
+.add-on {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}
+.flex_end1 {
+  justify-content: flex-end;
+}
+.file-field {
+  display: flex;
+}
+.file-field span {
+  color: #0d47a0;
+}
+.img-preview {
+  width: 120px;
+  background-color: #565b69;
+}
+input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.justify-content-middle {
+  display: flex;
+  flex-direction: column;
+}
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex_end input {
+  margin-right: 0 !important;
+}
+.btn-row-bg {
+  background: #e6ecf5;
+}
+.btn-row {
+  padding: 16px 0 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.btn-primary {
+  background: #0c4295;
+}
+/**/
+/* Table styles */
+.table {
+  color: #565b69;
+  font-weight: 500;
+}
+.dataTables_wrapper {
+  margin: 10px 12px;
+}
+.table-responsive thead {
+  background: #565b69;
+  color: #ffffff;
+}
+.table-responsive td,
+.table-responsive th  {
+  text-align: right;
+}
+.table-responsive td:nth-child(1),
+.table-responsive td:nth-child(2),
+.table-responsive th:nth-child(1),
+.table-responsive th:nth-child(2) {
+  text-align: left;
+}
+.table-responsive tfoot th,
+.table-responsive tfoot th:nth-child(1),
+.table-responsive tfoot th:nth-child(2) {
+  background: #f8f8f8;
+  text-align: right;
+}
+.bill-page h3 {
+  color: blueviolet;
+}
+.bill-page label {
+  font-weight: bold;
+}
+.bill-page p {
+  background: lightgray;
+  padding: 2px 5px;
+}
+.bill-table tfoot th:nth-child(2) {
+  text-align: left;
+}
+.value-table td,
+.value-table th {
+  padding: 0 15px;
+  font-weight: bold;
+}
+.value-table th {
+  background: #565b69;
+  color: #ffffff;
+}
+.value-table th label {
+  color: #ffffff;
+}
+.value-table td:nth-child(2),
+.value-table th:nth-child(2) {
+  text-align: right;
+}
+/**/
+
+
+
+
+/*Rough styles*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  header {
+    padding-bottom: 70px;
+    height: 200px;
+  }
+  .card1_row {
+    margin-top: -70px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    /* Table styles */
+  /* Force table to not be like tables anymore */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables tr { 
+    border: 1px solid #ccc; 
+  }
+  #no-more-tables td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+  }
+  #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
+  /* Label the data */
+  #no-more-tables td:before { content: attr(data-title); 
+    background: #565b69;
+    color: #ffffff;
+  }
+  #no-more-tables tfoot th {
+    display: table-cell;
+    width: 100vh;
+    text-align: right;
+  }
+  header .rounded-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-item {
+    border-bottom: 1px solid#265aab;
+  }
+  .nav-link {
+    padding: 20px 0;
+  }
+  .dropdown .dropdown-menu {
+    background:#0c4295;
+    border: 0 none;
+  }
+  .dropdown-item {
+    color: #fecc02;
+  }
+  /* Form styles */
+  .formBox1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .formBox1 :nth-child(1) { order: 1; }
+  .formBox1 :nth-child(2) { order: 2; }
+  .formBox1 :nth-child(3) { order: 4; }
+  .formBox1 :nth-child(4) { order: 3; }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+  .navbar-icon-top {
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width*/
