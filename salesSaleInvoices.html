@@ -262,11 +262,11 @@
         <h1 class="h3 mb-0 text-gray-800">
           <span>Sale</span>
           <span class="custom-control custom-checkbox custom-control-inline">
-          <input class="custom-control-input" id="cash_sale" type="checkbox" value="">
-          <label class="custom-control-label" for="cash_sale">
-            
-            Cash Sale
-          </label></span>
+            <input class="custom-control-input" id="cash_sale" type="checkbox" value="">
+            <label class="custom-control-label" for="cash_sale">
+              Cash Sale
+            </label>
+          </span>
         </h1>
       </div>
       
@@ -381,8 +381,8 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-              <label for="validationCustom01">Payment Type</label>
-              <select class="form-control" id="validationCustom01">
+              <label for="paymentType">Payment Type</label>
+              <select class="form-control" id="paymentType">
                 <option>Select</option>
               </select>
               <div class="valid-feedback">
@@ -390,8 +390,8 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
-              <label for="validationCustom02">Ref. No</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+              <label for="refNo">Ref. No</label>
+              <input type="text" class="form-control" id="refNo" placeholder="" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -401,18 +401,18 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-                <div class="file-field">
-                  <div class="img-preview z-depth-1-half mb-4">
-                    <img src="images/photo_upload.jpg" class="img-fluid"
-                      alt="example placeholder">
-                  </div>
-                  <div class="d-flex justify-content-center justify-content-middle">
-                    <div class="btn btn-mdb-color btn-rounded float-left">
-                      <span>Add/change</span>
-                      <input type="file">
-                    </div>
+              <div class="file-field">
+                <div class="img-preview z-depth-1-half mb-4">
+                  <img src="images/photo_upload.jpg" class="img-fluid"
+                    alt="example placeholder">
+                </div>
+                <div class="d-flex justify-content-center justify-content-middle">
+                  <div class="btn btn-mdb-color btn-rounded float-left">
+                    <span>Add/change</span>
+                    <input type="file">
                   </div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="description">Description</label>
@@ -429,7 +429,8 @@
           <div class="form-row form-group mb-3 flex_end">
             <label class="col text-right mb-0 form-inline flex_end" for="totalAmount">Total Amount</label>
             <div class="col">
-              <input type="text" id="totalAmount" class="col form-control"></div>
+              <input type="text" id="totalAmount" class="col form-control">
+            </div>
           </div>
           
           <!-- Form row -->
@@ -449,8 +450,10 @@
           </div>
         </div>
       </div>
-      <!-- Form fields Content -->
+      
     </div>
+    <!-- Form fields Content -->
+
     <!-- Form Buttons Content -->
     <div class="btn-row-bg">
       <div class="container">
@@ -462,6 +465,7 @@
       </div>
     </div>
     <!-- Form Buttons Content end-->
+
   </form>
 </body>
 </html>

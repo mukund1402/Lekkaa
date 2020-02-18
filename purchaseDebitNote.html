@@ -260,13 +260,7 @@
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">
-          <span>Sale</span>
-          <span class="custom-control custom-checkbox custom-control-inline">
-          <input class="custom-control-input" id="cash_sale" type="checkbox" value="">
-          <label class="custom-control-label" for="cash_sale">
-            
-            Cash Sale
-          </label></span>
+          <span>Debit Note</span>
         </h1>
       </div>
       
@@ -295,29 +289,33 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-sm-6 col-md-2 col-lg-1 mb-3">
-          <label for="invoiceNo">Invoice No</label>
-          <input type="text" class="form-control" id="invoiceNo" placeholder="" value="" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
       </div>
       
       <!-- Form row -->
       <div class="form-row">
-        <div class="col-auto mb-3">
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="taxExclude" name="tax1" class="custom-control-input">
-            <label class="custom-control-label" for="taxExclude">Tax Exclude</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="taxInclude" name="tax1" class="custom-control-input">
-            <label class="custom-control-label" for="taxInclude">Tax Include</label>
+        <div class="form-group col-md-3 mb-3">
+          <label for="returnNo">Return No</label>
+          <input type="text" class="form-control" id="returnNo" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
         </div>
+        <div class="form-group col-md-2 col-sm-6 mb-3">
+          <label for="billNumber">Bill No</label>
+          <input type="text" class="form-control" id="billNumber" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-sm-6 mb-3">
+          <label for="datetimepicker2">Bill Date</label>
+          <div class="input-append date" id="datetimepicker2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+            <input class="form-control" size="16" type="text" value="">
+            <span class="add-on"><i class="fa fa-calendar"></i></span>
+          </div> 
+        </div>
       </div>
-                  
+
       <!-- Table row -->
       <div class="table-responsive"><!-- id="no-more-tables" -->
         <table id="dataTable" class="col-sm-12 table table-condensed cf">
@@ -381,8 +379,8 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-              <label for="validationCustom01">Payment Type</label>
-              <select class="form-control" id="validationCustom01">
+              <label for="paymentType">Payment Type</label>
+              <select class="form-control" id="paymentType">
                 <option>Select</option>
               </select>
               <div class="valid-feedback">
@@ -390,8 +388,8 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
-              <label for="validationCustom02">Ref. No</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+              <label for="refNo">Ref. No</label>
+              <input type="text" class="form-control" id="refNo" placeholder="" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -401,18 +399,18 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-                <div class="file-field">
-                  <div class="img-preview z-depth-1-half mb-4">
-                    <img src="images/photo_upload.jpg" class="img-fluid"
-                      alt="example placeholder">
-                  </div>
-                  <div class="d-flex justify-content-center justify-content-middle">
-                    <div class="btn btn-mdb-color btn-rounded float-left">
-                      <span>Add/change</span>
-                      <input type="file">
-                    </div>
+              <div class="file-field">
+                <div class="img-preview z-depth-1-half mb-4">
+                  <img src="images/photo_upload.jpg" class="img-fluid"
+                    alt="example placeholder">
+                </div>
+                <div class="d-flex justify-content-center justify-content-middle">
+                  <div class="btn btn-mdb-color btn-rounded float-left">
+                    <span>Add/change</span>
+                    <input type="file">
                   </div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="description">Description</label>
@@ -429,7 +427,8 @@
           <div class="form-row form-group mb-3 flex_end">
             <label class="col text-right mb-0 form-inline flex_end" for="totalAmount">Total Amount</label>
             <div class="col">
-              <input type="text" id="totalAmount" class="col form-control"></div>
+              <input type="text" id="totalAmount" class="col form-control">
+            </div>
           </div>
           
           <!-- Form row -->
@@ -449,19 +448,23 @@
           </div>
         </div>
       </div>
-      <!-- Form fields Content -->
+      
     </div>
+    <!-- Form fields Content -->
+
     <!-- Form Buttons Content -->
     <div class="btn-row-bg">
       <div class="container">
         <div class="btn-row">
-          <button class="btn btn-primary d-sm-none d-md-block" type="submit">Save & Print</button>
+          <button class="btn btn-primary d-sm-none d-md-block" type="submit">Save & Preview</button>
+          <button class="btn btn-primary d-sm-none d-md-block mr-2" type="submit">Save & Print</button>
           <button class="btn btn-primary mr-2" type="submit">Save & New</button>
           <button class="btn btn-primary mr-2" type="submit">Save</button>
         </div>
       </div>
     </div>
     <!-- Form Buttons Content end-->
+
   </form>
 </body>
 </html>
