@@ -34,14 +34,17 @@
 .5rem=8px
 */
 body {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: .875rem;
+  line-height: 1.5rem;
   color: #7d818c;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 .bg-primary {
   background-color: #0c4295 !important;
+}
+.bg-grey {
+  background-color: #556080;
 }
 /* header styles */
 header {
@@ -384,7 +387,78 @@ input[type=file] {
   text-align: right;
 }
 /**/
+/*sidebar nav*/
+.vertical-nav {
+  min-width: 11.25rem;
+  width: 11.25rem;
+  height: 100vh;
+  position: absolute;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+.vertical-nav .nav {
+  color: #ffffff;
+}
+.page-content {
+  width: calc(100% - 11.25rem);
+  margin-left: 11.25rem;
+  transition: all 0.4s;
+}
+.vertical-nav .nav .nav-link {
+  font-size: .6875rem;
+  line-height: 24px;
+  display: flex;
+}
+.vertical-nav .nav .nav-link span.icon {
+  font-size: 1rem;
+  margin: 4px 20px 0 0;
+}
+.vertical-nav .nav .nav-link {
+  color: #ffffff;
+}
 
+.vertical-nav .nav .nav-link:hover, .vertical-nav .nav .nav-link:focus {
+  color: #ffffff;
+  background: #2c3759;
+}
+
+.vertical-nav .nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.vertical-nav .nav .show > .nav-link,
+.vertical-nav .nav .active > .nav-link,
+.vertical-nav .nav .nav-link.show,
+.vertical-nav .nav .nav-link.active {
+  color: #fff;
+  background: #2c3759;
+}
+
+.vertical-nav .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.vertical-nav .navbar-text a {
+  color: #fff;
+}
+
+.vertical-nav .navbar-text a:hover, .vertical-nav .navbar-text a:focus {
+  background: #2c3759;
+  color: #fff;
+}
+.form-row a.badge {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 100%;
+  margin: 0 0 0 5px;
+  height: 22px;
+}
+.setting-list {
+  list-style: none;
+  padding-left: 25px;
+}
+/**/
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query since this is the default in Bootstrap*/
 
