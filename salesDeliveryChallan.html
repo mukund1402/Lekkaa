@@ -273,14 +273,14 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-md-2 col-sm-6 mb-3">
+        <div class="form-group col-md-2 mb-3">
           <label for="datetimepicker1">Date</label>
           <div class="input-append date" id="datetimepicker1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
             <input class="form-control" size="16" type="text" value="">
             <span class="add-on"><i class="fa fa-calendar"></i></span>
           </div> 
         </div>
-        <div class="form-group col-md-2 col-sm-6 mb-3">
+        <div class="form-group col-md-2 mb-3">
           <label for="datetimepicker2">Due Date</label>
           <div class="input-append date" id="datetimepicker2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
             <input class="form-control" size="16" type="text" value="">
@@ -296,9 +296,27 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-sm-6 col-md-2 col-lg-1 mb-3">
+      </div>
+
+      <!-- Form row -->
+      <div class="form-row">
+        <div class="form-group col-md-3 mb-3">
           <label for="challanNo">Challan No</label>
           <input type="text" class="form-control" id="challanNo" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-4 mb-3">
+          <label for="transporterName">Dispatch by</label>
+          <input type="text" class="form-control" id="transporterName" placeholder="Transporter Name" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-lg-2 mb-3">
+          <label for="gstNumber">LR Number</label>
+          <input type="text" class="form-control" id="gstNumber" placeholder="" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -311,6 +329,7 @@
           <thead class="cf">
             <tr>
               <th>Item Name</th>
+              <th>HSN Code</th>
               <th>Quantity</th>
               <th>Unit</th>
               <th>Price/Unit</th>
@@ -323,6 +342,7 @@
           <tbody>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -333,6 +353,7 @@
             </tr>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -344,7 +365,7 @@
           </tbody>
           <tfoot class="cf">
             <tr>
-              <th colspan="7">Total:</th>
+              <th colspan="8">Total:</th>
               <th>Rs 435.57</th>
             </tr>
           </tfoot>

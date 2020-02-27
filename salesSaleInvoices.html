@@ -261,12 +261,6 @@
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">
           <span>Sale</span>
-          <span class="custom-control custom-checkbox custom-control-inline">
-            <input class="custom-control-input" id="cash_sale" type="checkbox" value="">
-            <label class="custom-control-label" for="cash_sale">
-              Cash Sale
-            </label>
-          </span>
         </h1>
       </div>
       
@@ -279,7 +273,7 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-md-2 col-sm-6 mb-3">
+        <div class="form-group col-md-3 col-lg-2 mb-3">
           <label for="datetimepicker1">Date</label>
           <div class="input-append date" id="datetimepicker1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
             <input class="form-control" size="16" type="text" value="">
@@ -295,9 +289,43 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-sm-6 col-md-2 col-lg-1 mb-3">
+        <div class="form-group col-md-3 col-lg-2 mb-3">
+          <label for="mobileNumber">Mobile Number</label>
+          <input type="text" class="form-control" id="mobileNumber" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-lg-2 mb-3">
+          <label for="gstNumber">GST Number</label>
+          <input type="text" class="form-control" id="gstNumber" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+
+      <!-- Form row -->
+      <div class="form-row formBox1">
+        <div class="form-group col-md-3 mb-3">
           <label for="invoiceNo">Invoice No</label>
           <input type="text" class="form-control" id="invoiceNo" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-lg-2 mb-3">
+          <label for="eWayBillNumber">E way bill Number</label>
+          <input type="text" class="form-control" id="eWayBillNumber" placeholder="" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="form-group col-md-3 mb-3">
+          <label for="State">State</label>
+          <select class="form-control" id="State">
+            <option>Select</option>
+          </select>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -324,6 +352,7 @@
           <thead class="cf">
             <tr>
               <th>Item Name</th>
+              <th>HSN Code</th>
               <th>Quantity</th>
               <th>Unit</th>
               <th>Price/Unit</th>
@@ -336,6 +365,7 @@
           <tbody>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -346,6 +376,7 @@
             </tr>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -357,7 +388,7 @@
           </tbody>
           <tfoot class="cf">
             <tr>
-              <th colspan="7">Total:</th>
+              <th colspan="8">Total:</th>
               <th>Rs 435.57</th>
             </tr>
           </tfoot>
@@ -396,6 +427,16 @@
                 Looks good!
               </div>
             </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <label for="isOnCredit">Is on credit</label>
+              <select class="form-control" id="isOnCredit">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
           </div>
 
           <!-- Form row -->
@@ -420,6 +461,13 @@
               <div class="valid-feedback">
                 Looks good!
               </div>
+            </div>
+          </div>
+
+          <!-- Form row -->
+          <div class="form-row">
+            <div class="col mb-3">
+              <a href="#">Terms & Conditions</a>
             </div>
           </div>
         </div>
