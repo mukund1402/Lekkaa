@@ -262,13 +262,13 @@
       <div class="vertical-nav bg-grey" id="sidebar">
         <ul class="nav flex-column  bg-grey mb-0">
           <li class="nav-item">
-            <a href="settingsGeneral.html" class="nav-link active">
+            <a href="settingsGeneral.html" class="nav-link">
               <span class="icon icon-Settings"></span>
               General
             </a>
           </li>
           <li class="nav-item">
-            <a href="settingsTransaction.html" class="nav-link">
+            <a href="settingsTransaction.html" class="nav-link active">
               <span class="icon icon-Settings"></span>
               Transaction
             </a>
@@ -292,13 +292,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="settingsGeneral.html" class="nav-link">
               <span class="icon icon-Settings"></span>
               Print
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="settingsGeneral.html" class="nav-link">
               <span class="icon icon-Settings"></span>
               Taxes & GST
             </a>
@@ -313,45 +313,14 @@
         <!-- Form row -->
         <div class="form-row">
           <div class="col-lg-4 mb-3 pr-3">
-            <h5>Application</h5>
+            <h5>Transaction Header</h5>
             <hr />
             <!-- Form row -->
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="enablePasscode" name="enablePasscode" class="custom-control-input">
-                  <label class="custom-control-label" for="enablePasscode">Enable Passcode</label>
-                  <a class="badge badge-info">!</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Form row -->
-            <div class="form-row">
-              <div class="col-auto mb-3">
-                <label>Business Currency</label>
-                <a class="badge badge-info">!</a>
-              </div>
-            </div>
-
-            <!-- Form row -->
-            <div class="form-row form-group mb-3">
-              <label class="col-auto mb-0 form-inline" for="amount">Amount<br />(Up to Decimal Places)</label>
-              <div class="col">
-                <select class="custom-select mb-3">
-                  <option selected>100</option>
-                  <option value="1">200</option>
-                  <option value="2">300</option>
-                  <option value="3">400</option>
-                </select></div>
-            </div>
-
-            <!-- Form row -->
-            <div class="form-row">
-              <div class="col-auto mb-3">
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="enableAutoLaunch" name="enableAutoLaunch" class="custom-control-input">
-                  <label class="custom-control-label" for="enableAutoLaunch">Enable Auto Launch</label>
+                  <input type="checkbox" id="invoiceBillNo" name="invoiceBillNo" class="custom-control-input">
+                  <label class="custom-control-label" for="invoiceBillNo">Invoice/Bill No.</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
@@ -361,21 +330,43 @@
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="gstinNumber" name="gstinNumber" class="custom-control-input">
-                  <label class="custom-control-label" for="gstinNumber">GSTIN Number</label>
+                  <input type="checkbox" id="cashSalebyDefault" name="cashSalebyDefault" class="custom-control-input">
+                  <label class="custom-control-label" for="cashSalebyDefault">Cash Sale by default</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
             </div>
 
-            <h5>More Transactions</h5>
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="billingNameofParties" name="billingNameofParties" class="custom-control-input">
+                  <label class="custom-control-label" for="billingNameofParties">Billing Name of Parties</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="customersPODetailsonTransactions" name="customersPODetailsonTransactions" class="custom-control-input">
+                  <label class="custom-control-label" for="customersPODetailsonTransactions">Customers P.O. Details on Transactions</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+
+            <h5>More Transaction Features</h5>
             <hr />
             <!-- Form row -->
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="estimateQuotation" name="estimateQuotation" class="custom-control-input">
-                  <label class="custom-control-label" for="estimateQuotation">Estimate/Quotation</label>
+                  <input type="checkbox" id="DonotShowInvoicePreview" name="DonotShowInvoicePreview" class="custom-control-input">
+                  <label class="custom-control-label" for="DonotShowInvoicePreview">Do not Show Invoice Preview</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
@@ -385,8 +376,8 @@
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="salePurchaseOrder1" name="salePurchaseOrder1" class="custom-control-input">
-                  <label class="custom-control-label" for="salePurchaseOrder1">Sale/Purchase Order</label>
+                  <input type="checkbox" id="enablePasscodeforTransactionDelete" name="enablePasscodeforTransactionDelete" class="custom-control-input">
+                  <label class="custom-control-label" for="enablePasscodeforTransactionDelete">Enable Passcode for transaction delete</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
@@ -396,8 +387,8 @@
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="salePurchaseOrder2" name="salePurchaseOrder2" class="custom-control-input">
-                  <label class="custom-control-label" for="salePurchaseOrder2">Other Income</label>
+                  <input type="checkbox" id="discountDuringPayments" name="discountDuringPayments" class="custom-control-input">
+                  <label class="custom-control-label" for="discountDuringPayments">Discount During Payments</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
@@ -407,47 +398,128 @@
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="deliveryChallan" name="deliveryChallan" class="custom-control-input">
-                  <label class="custom-control-label" for="deliveryChallan">Delivery Challan</label>
+                  <input type="checkbox" id="linkPaymentstoInvoices" name="linkPaymentstoInvoices" class="custom-control-input">
+                  <label class="custom-control-label" for="linkPaymentstoInvoices">Link Payments to Invoices</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
             </div>
-            <ul class="setting-list">
-              <li>
-                <!-- Form row -->
-                <div class="form-row">
-                  <div class="col-auto mb-3">
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" id="goodsReturn1" name="goodsReturn1" class="custom-control-input">
-                      <label class="custom-control-label" for="goodsReturn1">Goods Return on Delivery Challan</label>
-                      <a class="badge badge-info">!</a>
-                    </div>
-                  </div>
+            
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="dueDatesandPaymentTerms" name="dueDatesandPaymentTerms" class="custom-control-input">
+                  <label class="custom-control-label" for="dueDatesandPaymentTerms">Due Dates and Payment Terms</label>
+                  <a class="badge badge-info">!</a>
                 </div>
-              </li>
-              <li>
-                <!-- Form row -->
-                <div class="form-row">
-                  <div class="col-auto mb-3">
-                    <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" id="goodsReturn2" name="goodsReturn2" class="custom-control-input">
-                      <label class="custom-control-label" for="goodsReturn2">Print Amount in Delivery Challan</label>
-                      <a class="badge badge-info">!</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-            </ul>
+              </div>
+            </div>
+            <button class="btn btn-primary mr-2" type="submit">Additional Fields</button>
           </div>
           <div class="col-lg-4 mb-3 pr-3">
-            <h5>Multi Firm</h5>
+            <h5>Items Table</h5>
+            <hr />
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="inclusiveExclusiveTaxonRate" name="inclusiveExclusiveTaxonRate" class="custom-control-input">
+                  <label class="custom-control-label" for="inclusiveExclusiveTaxonRate">Inclusive/Exclusive Tax on Rate (Price/Unit)</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="displayPurchasePriceofItems" name="displayPurchasePriceofItems" class="custom-control-input">
+                  <label class="custom-control-label" for="displayPurchasePriceofItems">Display Purchase Price of Items</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="showlast5SalePriceofItems" name="showlast5SalePriceofItems" class="custom-control-input">
+                  <label class="custom-control-label" for="showlast5SalePriceofItems">Show last 5 Sale Price of Items</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="freeItemQuantity" name="freeItemQuantity" class="custom-control-input">
+                  <label class="custom-control-label" for="freeItemQuantity">Free Item Quantity</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="count" name="count" class="custom-control-input">
+                  <label class="custom-control-label" for="count">Count</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
+            </div>
+
+            <h5>Transaction Prefixes</h5>
             <hr />
             <!-- Form row -->
             <div class="form-row form-group mb-3">
               <div class="col">
-                <input type="text" id="totalAmount" class="col form-control" placeholder="Shreenidhi Enterprises"></div>
+                <label for="firm">Firm</label>
+                <select class="form-control" id="firm">
+                  <option>Shreenidhi Enterprises</option>
+                </select>
+              </div>
+            </div>
+            <label for="prefixes">Prefixes</label>
+            <div class="form-row form-group mb-3">
+              <div class="col">
+                <select class="form-control" id="sale">
+                  <option>Sale</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="firm">
+                  <option>Credit Note</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row form-group mb-3">
+              <div class="col">
+                <select class="form-control" id="sale">
+                  <option>Sale Order</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="firm">
+                  <option>Purchase Order</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row form-group mb-3">
+              <div class="col">
+                <select class="form-control" id="sale">
+                  <option>Estimate</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control" id="firm">
+                  <option>Delivery Challan</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 mb-3">
@@ -457,8 +529,8 @@
             <div class="form-row">
               <div class="col-auto mb-3">
                 <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" id="autoBackup" name="autoBackup" class="custom-control-input">
-                  <label class="custom-control-label" for="autoBackup">Auto Backup</label>
+                  <input type="checkbox" id="transactionWiseTax" name="transactionWiseTax" class="custom-control-input">
+                  <label class="custom-control-label" for="transactionWiseTax">Transaction wise Tax</label>
                   <a class="badge badge-info">!</a>
                 </div>
               </div>
@@ -467,22 +539,23 @@
             <!-- Form row -->
             <div class="form-row">
               <div class="col-auto mb-3">
-                <label>Last Backup 12/12/2019  |  11:23 PM</label>
-                <a class="badge badge-info">!</a>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="transactionWiseDiscount" name="transactionWiseDiscount" class="custom-control-input">
+                  <label class="custom-control-label" for="transactionWiseDiscount">Transaction wise Discount</label>
+                  <a class="badge badge-info">!</a>
+                </div>
               </div>
             </div>
 
             <!-- Form row -->
-            <div class="form-row form-group mb-3">
-              <label class="col-auto mb-0 form-inline" for="amount">Manual Backup Reminder</label>
-              <div class="col">
-                <select class="custom-select mb-3">
-                  <option selected>100</option>
-                  <option value="1">200</option>
-                  <option value="2">300</option>
-                  <option value="3">400</option>
-                </select></div>
-                <label class="col-auto mb-0 form-inline">Days</label>
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="roundOffTotal" name="roundOffTotal" class="custom-control-input">
+                  <label class="custom-control-label" for="roundOffTotal">Round Off Total</label>
+                  <a class="badge badge-info">!</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -261,7 +261,7 @@
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">
-          <span>Credit Note</span>
+          <span>Petty sale/Retail sale invoice</span>
         </h1>
       </div>
       
@@ -274,18 +274,16 @@
             Looks good!
           </div>
         </div>
-        <div class="form-group col-md-2 col-sm-6 mb-3">
+        <div class="form-group col-md-3 col-lg-2 mb-3">
           <label for="datetimepicker1">Date</label>
           <div class="input-append date" id="datetimepicker1" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
             <input class="form-control" size="16" type="text" value="">
             <span class="add-on"><i class="fa fa-calendar"></i></span>
           </div> 
         </div>
-        <div class="form-group col-md-3 mb-3">
-          <label for="placeOfSupply">Place of Supply</label>
-          <select class="form-control" id="placeOfSupply">
-            <option>Select</option>
-          </select>
+        <div class="form-group col-md-3 col-lg-2 mb-3">
+          <label for="mobileNumber">Mobile Number</label>
+          <input type="text" class="form-control" id="mobileNumber" placeholder="" value="" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -294,35 +292,25 @@
       
       <!-- Form row -->
       <div class="form-row">
-        <div class="form-group col-md-3 mb-3">
-            <label for="returnNo">Return No</label>
-            <input type="text" class="form-control" id="returnNo" placeholder="" value="" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+        <div class="col-auto mb-3">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxExclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxExclude">Tax Exclude</label>
           </div>
-      <div class="form-group col-md-2 col-sm-6 mb-3">
-        <label for="invoiceNumber">Invoice No</label>
-        <input type="text" class="form-control" id="invoiceNumber" placeholder="" value="" required>
-        <div class="valid-feedback">
-          Looks good!
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxInclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxInclude">Tax Include</label>
+          </div>
         </div>
       </div>
-      <div class="form-group col-md-3 col-sm-6 mb-3">
-        <label for="datetimepicker2">Invoice Date</label>
-        <div class="input-append date" id="datetimepicker2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-          <input class="form-control" size="16" type="text" value="">
-          <span class="add-on"><i class="fa fa-calendar"></i></span>
-        </div> 
-      </div>
-    </div>
-
+                  
       <!-- Table row -->
       <div class="table-responsive"><!-- id="no-more-tables" -->
         <table id="dataTable" class="col-sm-12 table table-condensed cf">
           <thead class="cf">
             <tr>
               <th>Item Name</th>
+              <th>HSN Code</th>
               <th>Quantity</th>
               <th>Unit</th>
               <th>Price/Unit</th>
@@ -335,6 +323,7 @@
           <tbody>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -345,6 +334,7 @@
             </tr>
             <tr>
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
+              <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
               <td data-title="Unit">200</td>
               <td data-title="Price/Unit">Rs 32.49</td>
@@ -356,7 +346,7 @@
           </tbody>
           <tfoot class="cf">
             <tr>
-              <th colspan="7">Total:</th>
+              <th colspan="8">Total:</th>
               <th>Rs 435.57</th>
             </tr>
           </tfoot>
@@ -389,40 +379,18 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
-              <label for="refNo">Ref. No</label>
-              <input type="text" class="form-control" id="refNo" placeholder="" value="" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-          </div>
-
-          <!-- Form row -->
-          <div class="form-row">
-            <div class="col-md-5 mb-3">
-              <div class="file-field">
-                <div class="img-preview z-depth-1-half mb-4">
-                  <img src="images/photo_upload.jpg" class="img-fluid"
-                    alt="example placeholder">
-                </div>
-                <div class="d-flex justify-content-center justify-content-middle">
-                  <div class="btn btn-mdb-color btn-rounded float-left">
-                    <span>Add/change</span>
-                    <input type="file">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="description">Description</label>
-              <textarea id="description" class="form-control" rows="3" placeholder="Type here .."></textarea>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5 mb-3">
+          
+          <!-- Form row -->
+          <div class="form-row form-group mb-3 flex_end">
+            <label class="col text-right mb-0 form-inline flex_end" for="taxAmountInTotal">Tax Amount in Total</label>
+            <div class="col">
+              <input type="text" id="taxAmountInTotal" class="col form-control">
+            </div>
+          </div>
           
           <!-- Form row -->
           <div class="form-row form-group mb-3 flex_end">
@@ -434,9 +402,9 @@
           
           <!-- Form row -->
           <div class="form-row form-group mb-3 flex_end">
-				    <label class="col text-right mb-0 form-inline flex_end" for="paidAmount">Paid Amount</label>
-				    <div class="col">
-					    <input type="text" id="paidAmount" class="col form-control">
+            <label class="col text-right mb-0 form-inline flex_end" for="receivedAmount">Received Amount</label>
+            <div class="col">      
+              <input type="text" id="receivedAmount" class="col form-control">
             </div>
           </div>
           
