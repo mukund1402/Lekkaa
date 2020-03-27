@@ -1,0 +1,97 @@
+/*
+1rem=16px;
+.75rem=12px;
+.5rem=8px
+*/
+body {
+  font-size: .875rem;
+  line-height: normal;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h1 {
+	font-size: 1rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+/* Content section */
+/* Table styles */
+.table {
+  color: #000000;
+  font-weight: 500;
+}
+.dataTables_wrapper {
+  margin: 10px 12px;
+}
+.table-responsive thead {
+  background: #ffffff;
+  color: #000000;
+  border-top: 1px solid #565b69;
+  border-bottom: 2px solid #565b69;
+}
+.table-responsive td,
+.table-responsive th  {
+  text-align: right;
+}
+.table-responsive td:nth-child(1),
+.table-responsive td:nth-child(2),
+.table-responsive th:nth-child(1),
+.table-responsive th:nth-child(2) {
+  text-align: left;
+}
+.table-responsive tfoot th,
+.table-responsive tfoot th:nth-child(1),
+.table-responsive tfoot th:nth-child(2) {
+  background: #f8f8f8;
+  text-align: right;
+}
+.bill-page h3 {
+  color: blueviolet;
+}
+.bill-page label {
+	color: #000000;
+	font-weight: bold;
+}
+.bill-page p {
+  padding: 2px 5px;
+}
+.bill-table tfoot th:nth-child(2) {
+  text-align: left;
+}
+.value-table td,
+.value-table th {
+  padding: 10px 15px 0;
+  font-weight: bold;
+}
+.value-table th {
+  background: #f8f8f8;
+  color: #000000;
+  border-top: 1px solid #565b69;
+  border-bottom: 1px solid #565b69;
+}
+.value-table th label {
+  color: #000000;
+}
+.value-table td:nth-child(2),
+.value-table th:nth-child(2) {
+  text-align: right;
+}
+/**/
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0 !important;
+    min-width: 768px;
+    color: #000000;
+  }
+  .bill-page label {
+    color: #000000;
+  }
+  .container {
+    width: auto;
+    min-width: 750px;
+  }
+}

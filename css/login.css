@@ -1,0 +1,53 @@
+html,body { 
+	height: 100%; 
+}
+a {
+  color: #ffffff;
+	text-decoration: underline;
+}
+.global-container {
+	height:100%;
+  min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../images/login_bg.jpg) no-repeat #0d47a1;
+	background-size: 100%;
+}
+form {
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+form label {
+  color: #ffffff;
+}
+.card-title { 
+  font-weight:300; 
+}
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top:20px;
+  background: #fecc02;
+  color: #011953;
+}
+.login-form { 
+	width:330px;
+	margin:20px;
+	background: none;
+}
+.login-form input, .login-form input:focus { 
+border-radius: 4px;
+background-color: rgba(0,0,0,0.4);
+border: 1px solid rgba(255,255,255,0.5);
+}
+.sign-up {
+	text-align:center;
+	padding:20px 0 0;
+}
+.alert {
+	margin-bottom:-30px;
+	font-size: 13px;
+	margin-top:20px;
+}

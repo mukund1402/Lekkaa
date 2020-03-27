@@ -31,67 +31,102 @@
         </h1>
       </div>
 
-      <h3 class="text-center">Sale Order</h3>
+      <h3 class="text-center">Sales invoice</h3>
       
       <!-- Form row -->
       <div class="form-row">
         <div class="col-md-3 mb-3">
-          <label>Order From:</label><br />
-          <label>Ashok haveri</label>
+          <label>Bill to:</label>
+          <label>Shreenidhi</label><br />
+          <label>Mobile number:</label>
+					<label>9481646771</label><br />
+					<label>GST number:</label>
+          <label>GSTIN 9481646771</label>
         </div>
         <div class="col-md-3 mb-3">
-          <label>GST number:</label>
-          <label>9481646771</label>
+          <label>Ship to:</label>
+          <label>Giri Enterprises</label><br />
+          <label>Terms:</label>
+          <label>Due on Receipt</label><br /> 
+          <label>P.O.no:</label>
+          <label>PO-000760078</label>
         </div>
         <div class="col-md-6 mb-3 text-right">
-          <label>Order No: 1</label><br />
-          <label>Date: 16-11-2019</label>
-        </div>
-      </div>
-            
+          <label>Bill number:</label>
+          <label>INV-00001</label><br />
+          <label>Invoice Date:</label>
+					<label>14-11-2019</label><br /> 
+					<label>Due Date:</label>
+          <label>14-11-2019</label>
+				</div>
+				<div class="col-md-12 mb-3">
+					<label>Subject:</label>
+          <label>Design, Engineering & supply of PMCC and Electrical distribution panels</label>
+
+				</div>
+			</div>
+			
       <!-- Table row -->
       <div class="table-responsive bill-table"><!-- id="no-more-tables" -->
         <table class="col-sm-12 table table-condensed">
           <thead>
             <tr>
               <th>#</th>
-              <th>Item Name</th>
-              <th>HSN/SAC</th>
+              <th>Items/Description</th>
               <th>Quantity</th>
-              <th>Price/Unit</th>
-              <th>GST</th>
+              <th>Rate</th>
+              <th>Tax (%)</th>
+              <th>Tax Amount</th>
               <th>Amount</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>Saddles</td>
-              <td></td>
-              <td>18</td>
-              <td>Rs 85.00</td>
-              <td>Rs 275.40(18.0%)</td>
-              <td>Rs 1,805.40</td>
+              <td>Coupler (hard) 1.5 inch</td>
+              <td>1</td>
+              <td>Rs 42.00</td>
+              <td>18.0%</td>
+              <td>7.56</td>
+              <td>Rs 49.56</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Gum tape</td>
-              <td></td>
-              <td>84</td>
+              <td>Coupler (hard) 1.5 inch</td>
+              <td>2</td>
+              <td>Rs 12.00</td>
+              <td>18.0%</td>
+              <td>4.32</td>
+              <td>Rs 28.32</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Coupler (hard) 1.5 inch</td>
+              <td>1</td>
               <td>Rs 8.00</td>
-              <td>Rs 0.00(0.0%)</td>
-              <td>Rs 672.00</td>
+              <td>18.0%</td>
+              <td>1.44</td>
+              <td>Rs 9.44</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>PVC pipe (1inch) 4ft</td>
+              <td>1</td>
+              <td>Rs 42.00</td>
+              <td>18.0%</td>
+              <td>7.56</td>
+              <td>Rs 49.56</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <th></th>
               <th>Total:</th>
+              <th>5</th>
               <th></th>
-              <th>102</th>
               <th></th>
-              <th>Rs 275.40</th>
-              <th>Rs 2,477.40</th>
+              <th>Rs 20.88</th>
+              <th>Rs 136.88</th>
             </tr>
           </tfoot>
         </table>
@@ -101,11 +136,8 @@
       <!-- Form row -->
       <div class="form-row">
         <div class="col-md-12 col-lg-7 mb-3">
-          <label>DESCRIPTION</label>   
-          <p>goods sold on credit basis</p>
-          <label>ORDER AMOUNT IN WORDS</label>   
-          <p>Two Thousand Four Hundred and Seventy Seven Rupees and Fourty Paisa only</p>
-          <p>Due Date: 16-11-2019</p>
+          <label>BILL AMOUNT IN WORDS</label>   
+          <p>One Hundred and Thirty Six Rupees and Eighty Eight Paisa only</p>
           <label>TERMS AND CONDITIONS</label>   
           <p>Thanks for doing business with us!</p>
         </div>
@@ -114,36 +146,32 @@
             <table class="col-sm-12"> 
               <tr>
                 <td><label>Sub Total</label></td>
-                <td><label>Rs. 65,090.00</label></td>
-              </tr>
-              <tr>
-                  <td><label>IGST@18.0%</label></td>
-                  <td><label>Rs. 6,300.00</label></td>
-              </tr>
-              <tr>
-                <td><label>SGST@9.0%</label></td>
-                <td><label>Rs. 2,708.10</label></td>
+                <td><label>Rs. 116.00</label></td>
               </tr>
               <tr>
                 <td><label>CGST@9.0%</label></td>
-                <td><label>Rs. 2,708.10</label></td>
+                <td><label>Rs. 6.66</label></td>
               </tr>
               <tr>
-                <td><label>Tax amount in total</label></td>
-                <td><label>Rs. 20.88</label></td>
+                <td><label>SGST@9.0%</label></td>
+                <td><label>Rs. 6.66</label></td>
+              </tr>
+              <tr>
+                <td><label>Rounding</label></td>
+                <td><label>Rs. 0.50</label></td>
               </tr>
               <tr>
                 <th><label>Total</label></th>
-                <th><label>Rs. 76,806.20</label></th>
+                <th><label>Rs. 136.88</label></th>
               </tr>
               <tr>
-                  <td><label>Advance</label></td>
-                  <td><label>Rs. 0.00</label></td>
-                </tr>
-                <tr>
-                  <td><label>Balance</label></td>
-                  <td><label>Rs. 2,477.40</label></td>
-                </tr>
+                <td><label>Paid</label></td>
+                <td><label>Rs. 0.00</label></td>
+              </tr>
+              <tr>
+                <td><label>Balance</label></td>
+                <td><label>Rs. 136.88</label></td>
+              </tr>
             </table>     
           </div>
           <div class="text-center">

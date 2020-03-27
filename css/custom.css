@@ -40,6 +40,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+a {
+  color: #0d47a0;
+}
+a:hover {
+  color: #7d818c;
+  text-decoration: none;
+}
 .bg-primary {
   background-color: #0c4295 !important;
 }
@@ -358,36 +365,6 @@ input[type=file] {
   background: #f8f8f8;
   text-align: right;
 }
-.bill-page h3 {
-  color: blueviolet;
-}
-.bill-page label {
-  font-weight: bold;
-}
-.bill-page p {
-  background: lightgray;
-  padding: 2px 5px;
-}
-.bill-table tfoot th:nth-child(2) {
-  text-align: left;
-}
-.value-table td,
-.value-table th {
-  padding: 0 15px;
-  font-weight: bold;
-}
-.value-table th {
-  background: #565b69;
-  color: #ffffff;
-}
-.value-table th label {
-  color: #ffffff;
-}
-.value-table td:nth-child(2),
-.value-table th:nth-child(2) {
-  text-align: right;
-}
-/**/
 /*sidebar nav*/
 .vertical-nav {
   min-width: 11.25rem;

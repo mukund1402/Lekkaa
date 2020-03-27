@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lekkaa</title>
+  <title>Lekka</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,7 +24,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="salesSaleInvoices.html"><img src="images/lekkaa_logo.png" alt="Lekkaa" /></a>
+          <a class="navbar-brand" href="salesSaleInvoices.html"><img src="images/lekkaa_logo.png" alt="Lekka" /></a>
           <ul class="navbar-nav topbar" style="position: absolute; top: 0; right: 0;">
             <li class="nav-item">
               <div class="searchbar">
@@ -87,7 +87,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="salesSaleInvoices.html">Sale invoices</a>
-                  <a class="dropdown-item" href="salesPropermaInvoice.html">Properma invoice</a>
+                  <a class="dropdown-item" href="salesProformaInvoice.html">Properma invoice</a>
                   <a class="dropdown-item" href="salesRetailSaleInvoice.html">Retail sale invoice</a>
                   <a class="dropdown-item" href="salesPaymentIn.html">Payment in</a>
                   <a class="dropdown-item" href="salesQuotation.html">Quotation</a>
@@ -332,6 +332,20 @@
           </div> 
         </div>
       </div>
+
+      <!-- Form row -->
+      <div class="form-row">
+        <div class="col-auto mb-3">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxExclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxExclude">Tax Exclude</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="taxInclude" name="tax1" class="custom-control-input">
+            <label class="custom-control-label" for="taxInclude">Tax Include</label>
+          </div>
+        </div>
+      </div>
                   
       <!-- Table row -->
       <div class="table-responsive"><!-- id="no-more-tables" -->
@@ -345,6 +359,7 @@
               <th>Price/Unit</th>
               <th>Disc (%)</th>
               <th>Disc Amount</th>
+              <th>Tax (%)</th>
               <th>Tax Amount</th>
               <th>Amount</th>
             </tr>
@@ -354,10 +369,11 @@
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
               <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
-              <td data-title="Unit">200</td>
+              <td data-title="Unit">no unit</td>
               <td data-title="Price/Unit">Rs 32.49</td>
               <td data-title="Disc (%)">18.0%</td>
               <td data-title="Disc Amount">Rs 45.57</td>
+              <td data-title="Tax (%)">18.0%</td>
               <td data-title="Tax Amount">Rs 45.57</td>
               <td data-title="Amount">Rs 45.57</td>
             </tr>
@@ -365,17 +381,18 @@
               <td data-title="Item Name">Coupler (hard) 1.5 inche</td>
               <td data-title="HSN Code"></td>
               <td data-title="Quantity">HSN / SAC</td>
-              <td data-title="Unit">200</td>
+              <td data-title="Unit">no unit</td>
               <td data-title="Price/Unit">Rs 32.49</td>
               <td data-title="Disc (%)">18.0%</td>
               <td data-title="Disc Amount">Rs 45.56</td>
+              <td data-title="Tax (%)">18.0%</td>
               <td data-title="Tax Amount">Rs 45.56</td>
               <td data-title="Amount">Rs 45.57</td>
             </tr>
           </tbody>
           <tfoot class="cf">
             <tr>
-              <th colspan="8">Total:</th>
+              <th colspan="9">Total:</th>
               <th>Rs 435.57</th>
             </tr>
           </tfoot>
