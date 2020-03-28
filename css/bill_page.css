@@ -49,6 +49,7 @@ h3 {
 }
 .bill-page h3 {
   color: blueviolet;
+  margin-bottom: 40px;
 }
 .bill-page label {
 	color: #000000;
