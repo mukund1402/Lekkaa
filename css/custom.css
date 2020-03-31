@@ -519,6 +519,12 @@ input[type=file] {
   .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
   } 
+  .dropdown-menu {
+    background: #f6f1dc;
+  }
+  .dropdown-menu a:hover {
+    background: #f8eab0;
+  }
   /* navbar styles end*/
 }
 

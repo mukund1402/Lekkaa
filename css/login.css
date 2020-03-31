@@ -5,13 +5,17 @@ a {
   color: #ffffff;
 	text-decoration: underline;
 }
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
 .global-container {
 	height:100%;
   min-height: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url(../images/login_bg.jpg) no-repeat 50% 50% #0d47a1;
+	background: #062a74;
 }
 form {
 	padding-top: 10px;
@@ -31,15 +35,26 @@ form label {
   background: #fecc02;
   color: #011953;
 }
+.btn:hover {
+	background-color: orange;
+	color: #011953;
+}
 .login-form { 
 	width:330px;
 	margin:20px;
-	background: none;
+	background: url(../images/login_bg.jpg) no-repeat 50% 50% #0d47a1;
+	border: 2px solid #174f8f;
 }
-.login-form input, .login-form input:focus { 
+.login-form input { 
 border-radius: 4px;
 background-color: rgba(0,0,0,0.4);
 border: 1px solid rgba(255,255,255,0.5);
+color: #ffffff;
+}
+.login-form input:focus {
+	background-color: rgba(0,0,0,0.4);
+	border: 1px solid #ffffff;
+	color: #ffffff;
 }
 .sign-up {
 	text-align:center;
