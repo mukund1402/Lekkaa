@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lekka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/jquery.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+  <header class="bg-gradient-primary">
+    <div class="d-md-none top_strip"></div>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-primary bg-primary">
+      <div class="container">
+        <div class="container1">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="salesSaleInvoices.html"><img src="images/lekkaa_logo.png" alt="Lekka" /></a>
+          <ul class="navbar-nav topbar" style="position: absolute; top: 0; right: 0;">
+            <li class="nav-item">
+              <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="fa fa-bell">
+                  <span class="badge badge-info">11</span>
+                </i>
+              </a>
+            </li>
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown  d-none d-lg-block">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                <img class="img-profile rounded-circle" src="images/user_dummy_icon.png">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+          </ul>
+    
+          <div class="break"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item d-md-none" style="background: #0a3981;">
+                <a class="nav-link" href="#" role="button">
+                  <img class="img-profile rounded-circle mr-2" src="images/user_dummy_icon.png">
+                  <span class="mt-4 d-inline">Abhijit Kulkarni
+                    <span class="mb-4 small"><br />Base lin etext</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="salesSaleInvoices.html" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Sales"></span>
+                  Sales 
+                  <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="salesSaleInvoices.html">Sale invoices</a>
+                  <a class="dropdown-item" href="salesProformaInvoice.html">Proforma invoice</a>
+                  <a class="dropdown-item" href="salesRetailSaleInvoice.html">Retail sale invoice</a>
+                  <a class="dropdown-item" href="salesPaymentIn.html">Payment in</a>
+                  <a class="dropdown-item" href="salesQuotation.html">Quotation</a>
+                  <a class="dropdown-item" href="salesSaleOrder.html">Sale order </a>
+                  <a class="dropdown-item" href="salesDeliveryChallan.html">delivery challan</a>
+                  <a class="dropdown-item" href="salesCreditNote.html">Sale return</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="purchasePurchaseBills.html" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Purchase"></span>
+                  Purchase
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="purchasePurchaseBills.html">Purchase bills</a>
+                  <a class="dropdown-item" href="purchasePaymentOut.html">Payment out</a>
+                  <a class="dropdown-item" href="purchasePurchaseOrder.html">Purchase order</a>
+                  <a class="dropdown-item" href="purchaseDebitNote.html">Purchase return</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-report"></span>
+                  Reports
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Transaction</a>
+                  <a class="dropdown-item" href="#">Party report</a>
+                  <a class="dropdown-item" href="#">GST report</a>
+                  <a class="dropdown-item" href="#">Item/stock report</a>
+                  <a class="dropdown-item" href="#">Expense report</a>
+                  <a class="dropdown-item" href="#">Sales report</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="settingsGeneralUserProfile.html" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon-Settings"></span>
+                  Settings
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="settingsGeneralUserProfile.html">Edit user profile</a>
+                  <a class="dropdown-item" href="settingsGeneralApplication.html">Application</a>
+                  <a class="dropdown-item" href="settingsMultifirm.html">Multifirm</a>
+                  <a class="dropdown-item" href="settingsBackup.html">Backup</a>
+                  <a class="dropdown-item" href="settingsTaxandGst.html">Taxes and GST</a>
+                  <a class="dropdown-item" href="settingsPrint.html">Print</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon-Hepand-Support"></span>
+                  Help & support
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Customer care</a>
+                  <a class="dropdown-item" href="#">Guide/Manual</a>
+                  <a class="dropdown-item" href="#">Remote support</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin Page Content -->
+  
+  <!-- Card Content -->
+  <div class="container">
+
+    <div class="navbar navbar-expand-md navbar-light">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown2">
+        
+        <!-- Content Row -->
+        <div class="row card1_row">
+
+          <!-- Sales & purchase Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie1_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">20%</div>
+                      <div class="text-xs font-weight-bold text-primary mb-1">Sales & purchase</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sales & purchase Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie2_img.png" alt="" />   
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">37</div>
+                      <div class="text-xs font-weight-bold text-primary mb-1">Sales & purchase</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products range Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie3_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">205</div>
+                      <div class="text-xs font-weight-bold text-primary mb-1">Products range</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products range Card Example -->
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="card1">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                      <img src="images/pie4_img.png" alt="" />
+                    </div>
+                    <div class="col ml-2">
+                      <div class="h5 mb-0 font-weight-bold text-primary">80</div>
+                      <div class="text-xs font-weight-bold text-primary mb-1">Products range</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-arrow-down"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container-->
+  <form class="needs-validation" novalidate>
+
+    <!-- Form fields Content -->
+    <div class="container">
+      
+      <!-- Vertical navbar -->
+      <div class="vertical-nav bg-grey" id="sidebar">
+        <ul class="nav flex-column  bg-grey mb-0">
+          <li class="nav-item Toggle">
+            <span class="nav-link">
+              <span class="icon icon-Settings"></span>
+              General
+            </span>
+            <ul class="nav flex-column  bg-grey mb-0">
+              <li class="nav-item">
+                <a href="settingsGeneralUserProfile.html" class="nav-link pl-4">
+                  <span class="icon icon-Settings"></span>
+                  Edit user profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="settingsGeneralApplication.html" class="nav-link pl-4">
+                  <span class="icon icon-Settings"></span>
+                  Application
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="settingsMultifirm.html" class="nav-link">
+              <span class="icon icon-Settings"></span>
+              Multifirm
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="settingsBackup.html" class="nav-link">
+              <span class="icon icon-Settings"></span>
+              Backup
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="settingsTaxandGst.html" class="nav-link">
+              <span class="icon icon-Settings"></span>
+              Taxes and GST
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="settingsPrint.html" class="nav-link active">
+              <span class="icon icon-Settings"></span>
+              Print
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End vertical navbar -->
+
+      <!-- Page content holder -->
+      <div class="page-content pl-4" id="content">
+        
+        <!-- Form row -->
+        <div class="form-row">
+          <div class="col-lg-12 mb-3 pr-3">
+            <h5>Print settings</h5>
+            <hr />
+            
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="printOriginalDuplicate" name="printOriginalDuplicate" class="custom-control-input">
+                  <label class="custom-control-label" for="printOriginalDuplicate">Print original / duplicate</label>
+                  <span class="icon-info"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form row -->
+            <div class="form-row">
+              <div class="col-auto mb-3">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" id="pageNumberDisplay" name="pageNumberDisplay" class="custom-control-input">
+                  <label class="custom-control-label" for="pageNumberDisplay">Page number display</label>
+                  <span class="icon-info"></span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Form fields Content -->
+      </div>
+    </div>
+  </form>
+</body>
+</html>
