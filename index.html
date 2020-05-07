@@ -86,13 +86,13 @@
                   <span class="sr-only">(current)</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="salesSaleInvoices.html">Sale invoices</a>
+                  <a class="dropdown-item" href="salesSaleInvoices.html">Sales invoice</a>
                   <a class="dropdown-item" href="salesProformaInvoice.html">Proforma invoice</a>
                   <a class="dropdown-item" href="salesRetailSaleInvoice.html">Retail sale invoice</a>
                   <a class="dropdown-item" href="salesPaymentIn.html">Payment in</a>
                   <a class="dropdown-item" href="salesQuotation.html">Quotation</a>
                   <a class="dropdown-item" href="salesSaleOrder.html">Sale order </a>
-                  <a class="dropdown-item" href="salesDeliveryChallan.html">delivery challan</a>
+                  <a class="dropdown-item" href="salesDeliveryChallan.html">Delivery challan</a>
                   <a class="dropdown-item" href="salesCreditNote.html">Sale return</a>
                 </div>
               </li>
@@ -102,7 +102,7 @@
                   Purchase
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="purchasePurchaseBills.html">Purchase bills</a>
+                  <a class="dropdown-item" href="purchasePurchaseBills.html">Purchase bill</a>
                   <a class="dropdown-item" href="purchasePaymentOut.html">Payment out</a>
                   <a class="dropdown-item" href="purchasePurchaseOrder.html">Purchase order</a>
                   <a class="dropdown-item" href="purchaseDebitNote.html">Purchase return</a>
@@ -415,8 +415,8 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-              <label for="validationCustom01">Payment Type</label>
-              <select class="form-control" id="validationCustom01">
+              <label for="paymentType">Payment Type</label>
+              <select class="form-control" id="paymentType">
                 <option>Select</option>
               </select>
               <div class="valid-feedback">
@@ -424,8 +424,8 @@
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-3">
-              <label for="validationCustom02">Ref. No</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+              <label for="refNo">Ref. No</label>
+              <input type="text" class="form-control" id="refNo" placeholder="" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -445,18 +445,18 @@
           <!-- Form row -->
           <div class="form-row">
             <div class="col-md-5 mb-3">
-                <div class="file-field">
-                  <div class="img-preview z-depth-1-half mb-4">
-                    <img src="images/photo_upload.jpg" class="img-fluid"
-                      alt="example placeholder">
-                  </div>
-                  <div class="d-flex justify-content-center justify-content-middle">
-                    <div class="btn btn-mdb-color btn-rounded float-left">
-                      <span>Add/change</span>
-                      <input type="file">
-                    </div>
+              <div class="file-field">
+                <div class="img-preview z-depth-1-half mb-4">
+                  <img src="images/photo_upload.jpg" class="img-fluid"
+                    alt="example placeholder">
+                </div>
+                <div class="d-flex justify-content-center justify-content-middle">
+                  <div class="btn btn-mdb-color btn-rounded float-left">
+                    <span>Add/change</span>
+                    <input type="file">
                   </div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="description">Description</label>
@@ -480,7 +480,8 @@
           <div class="form-row form-group mb-3 flex_end">
             <label class="col text-right mb-0 form-inline flex_end" for="totalAmount">Total Amount</label>
             <div class="col">
-              <input type="text" id="totalAmount" class="col form-control"></div>
+              <input type="text" id="totalAmount" class="col form-control">
+            </div>
           </div>
           
           <!-- Form row -->
@@ -500,8 +501,10 @@
           </div>
         </div>
       </div>
-      <!-- Form fields Content -->
+      
     </div>
+    <!-- Form fields Content -->
+
     <!-- Form Buttons Content -->
     <div class="btn-row-bg">
       <div class="container">
@@ -513,6 +516,7 @@
       </div>
     </div>
     <!-- Form Buttons Content end-->
+
   </form>
 </body>
 </html>

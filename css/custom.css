@@ -221,6 +221,10 @@ background: #295cac !important;
   font-size: 1.2rem;
 }
 /**/
+.navbar-primary .navbar-nav .nav-link,
+.navbar-primary .navbar-nav .dropdown-item {
+  text-transform: capitalize;
+}
 .navbar-primary .navbar-nav .nav-link {
   font-size: 1rem;
   line-height: 24px;
